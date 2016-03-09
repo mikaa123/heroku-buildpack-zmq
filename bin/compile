@@ -37,7 +37,7 @@ npecho "setting zeromq compile flags"
 export LDFLAGS=-L$BUILD_DIR/$ZMQ_NAME/lib
 export CPPFLAGS=-I$BUILD_DIR/$ZMQ_NAME/include
 export PKG_CONFIG_PATH=$BUILD_DIR/$ZMQ_NAME/lib/pkgconfig
-export $PATH=$PATH:$BUILD_DIR/$ZMQ_NAME
-export $PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/lib
-export $PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/lib/pkgconfig
-export $PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/include
+export PATH=$PATH:$BUILD_DIR/$ZMQ_NAME
+export PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/lib
+export PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/lib/pkgconfig
+export PATH=$PATH:$BUILD_DIR/$ZMQ_NAME/include
